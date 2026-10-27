@@ -1,0 +1,66 @@
+
+name: make_it
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # İkonlar
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.3.0
+
+  # State management
+  provider: ^6.1.5+1
+
+  # Yerel veri saklama
+  shared_preferences: ^2.5.5
+
+  # Tarih, saat ve yerelleştirme
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
+  # Takvim
+  syncfusion_flutter_calendar: ^35.1.42
+  syncfusion_localizations: ^35.1.40+1
+  flutter_local_notifications: ^22.3.2
+  timezone: ^0.11.2
+  flutter_timezone: ^5.1.1
+  time_picker_spinner: ^1.0.2
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Tip güvenli asset kodu üretimi
+  build_runner: ^2.12.0
+  flutter_gen_runner: ^5.15.0
+
+# FlutterGen yapılandırması
+flutter_gen:
+  output: lib/gen/
+  integrations:
+    flutter_svg: true
+
+# Flutter varlıkları
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+# Uygulama ikonu
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/icon_seffaf.png"
+  image_path_android: "assets/icons/icon_seffaf.png"
+  remove_alpha_ios: true
